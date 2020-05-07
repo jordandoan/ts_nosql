@@ -17,4 +17,4 @@ router.post('/', (req, res) => {
     .then(data => res.json(data));
 });
 
-export default router;
+export = router;

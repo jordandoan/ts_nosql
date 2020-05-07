@@ -16,4 +16,4 @@ app.use("/posts", postRoutes);
 
 // mongoose.connect("mongodb://127.0.0.1/sample", { useNewUrlParser: true, useFindAndModify: false});
 
-export default app;
+export = app;
