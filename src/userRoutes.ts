@@ -1,5 +1,4 @@
 import express, { Request, Response } from 'express';
-import mongoose from 'mongoose';
 import User from './models/User';
 
 const router = express.Router();
@@ -13,8 +12,9 @@ router.get('/', (req,res) => {
 
 router.post('/', (req, res) => {
   const user = new User({...req.body});
-  console.log(user);
 
   user.save()
     .then(data => res.json(data));
 });
+
+export default router;

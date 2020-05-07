@@ -1,5 +1,4 @@
 import express, { Request, Response } from 'express';
-import mongoose from 'mongoose';
 import User from './models/User';
 import Post from './models/Post';
 
@@ -12,7 +11,6 @@ router.get('/', (req,res) => {
 
 router.post('/', (req, res) => {
   const post = new Post({...req.body});
-  console.log(post);
 
   post.save()
     .then(data => {
