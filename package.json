@@ -1,0 +1,25 @@
+{
+  "name": "mongo_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.12",
+    "tslint": "^6.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "typescript": "^3.8.3"
+  }
+}
